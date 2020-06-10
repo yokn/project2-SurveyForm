@@ -15,31 +15,45 @@ My Survey Page
     This survey aims to gather information about 
 </p>
 <form id="survey-form">
+
     <label id="name-label"> Name</label>
         <input id="name" type="text" placeholder="Enter your name" required>
-   
     <label id="email-label"> E-mail</label>
         <input id="email" type="email" placeholder="Enter your e-mail adress" required>
-    
     <label id="number-label"> Number</label>
-        <input id="number" type="number" min="0" max="9" placeholder="Choose a number from 0 to 9" required>
-    
+        <input id="number" type="number" min="0" max="9" placeholder="Choose a number from 0 to 9" required>   
+
     <label id="dropdown"> dropdown</label>
         <select id="dropdown">
             <option value="Option-1">Option 1</option>
             <option value="Option-2">Option 2</option>
             <option value="Option-3">Option 3</option>
         </select>
+
     <fieldset>
         <legend>Select only one:</legend>
         <!--Radio buttons must have the same "name" attribute to work(deselect automatically)-->
             <label id="radio-label1"> Radio1</label>
-                <input class="radio" name="radionamegroup" type="radio" value="yeah">
+                <input class="radio" name="radionamegroup" type="radio" value="radio1selected">
             <label id="radio-label2"> Radio2</label>
-                <input class="radio" name="radionamegroup" type="radio" value="no">
+                <input class="radio" name="radionamegroup" type="radio" value="radio2selected">
             <label id="radio-label3"> Radio3</label>
-                <input class="radio" name="radionamegroup" type="radio" value="maybe">
+                <input class="radio" name="radionamegroup" type="radio" value="radio3selected">
     </fieldset>
+
+    <label id="checkbox1"> Checkbox1</label>
+        <input id="checkbox1" type="checkbox" value="checkbox1selected">
+    <label id="checkbox2"> Checkbox2</label>
+        <input id="checkbox1" type="checkbox" value="checkbox2selected">
+    <label id="checkbox3"> Checkbox3</label>
+        <input id="checkbox1" type="checkbox" value="checkbox3selected">
+        
+    <textarea>
+
+    </textarea>
+
+    <input id="submit"  type="submit">
+
 </form>
         </main>
     </body>
