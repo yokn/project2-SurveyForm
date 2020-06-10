@@ -3,57 +3,76 @@
     <head>
         <meta charset="utf-8">
         <title>
-My Survey Page
+    My Survey Page
         </title>
     </head>
-    <body>
-        <main>
+    <body style="background-color: lightgray;">
+        <main style="text-align: center;">
+            <style>
+                #survey-form{
+                    display: grid;
+                    grid-template-columns: 250px;
+                    grid-gap: 8px;
+                    justify-content: center;
+                    font: 16px Montserrat, sans-serif;
+                }
+               #textareap{
+                text-align: left;
+                margin: 5px;
+               }
+               #title{
+                   font-family:cursive;
+                   font-size: 42px;
+               }
+               #description{
+                   font-family: sans-serif;
+               }
+            </style>
 <h1 id="title">
-    My Survey Form!
+    VPN Survey
 </h1>
 <p id="description">
-    This survey aims to gather information about 
+    Please fill out this survey so we can improve <br>your 
+    experience with our app
 </p>
 <form id="survey-form">
-
     <label id="name-label"> Name</label>
-        <input id="name" type="text" placeholder="Enter your name" required>
+        <input id="name" type="text" placeholder="Please enter your name" required>
     <label id="email-label"> E-mail</label>
-        <input id="email" type="email" placeholder="Enter your e-mail adress" required>
-    <label id="number-label"> Number</label>
-        <input id="number" type="number" min="0" max="9" placeholder="Choose a number from 0 to 9" required>   
-
-    <label id="dropdown"> dropdown</label>
+        <input id="email" type="email" placeholder="Please enter your e-mail adress" required>
+    <label id="number-label"> Phone Number</label>
+        <input id="number" type="number" min="0" max="9" placeholder="Please enter your phone number" required>   
+    
+    <label id="dropdown"> How often do you use our app?</label>
         <select id="dropdown">
-            <option value="Option-1">Option 1</option>
-            <option value="Option-2">Option 2</option>
-            <option value="Option-3">Option 3</option>
+            <option value="Option-1">Once a month</option>
+            <option value="Option-2">Once a week</option>
+            <option value="Option-3">Every day</option>
         </select>
 
     <fieldset>
-        <legend>Select only one:</legend>
+        <legend>Would you recommend our app to a friend?</legend>
         <!--Radio buttons must have the same "name" attribute to work(deselect automatically)-->
-            <label id="radio-label1"> Radio1</label>
-                <input class="radio" name="radionamegroup" type="radio" value="radio1selected">
-            <label id="radio-label2"> Radio2</label>
-                <input class="radio" name="radionamegroup" type="radio" value="radio2selected">
-            <label id="radio-label3"> Radio3</label>
-                <input class="radio" name="radionamegroup" type="radio" value="radio3selected">
+            <label id="radio-label1"> Yes</label>
+                <input class="radio" name="radionamegroup" type="radio" value="yes">
+            <label id="radio-label2"> No</label>
+                <input class="radio" name="radionamegroup" type="radio" value="no">
     </fieldset>
+    
+    <fieldset>
+        <legend>Which feature is most important to you?</legend>
+    <label id="checkbox1"> Automatic connection</label>
+        <input id="checkbox1" type="checkbox" value="autoconnect">
+    <label id="checkbox2"> IP masking</label>
+        <input id="checkbox1" type="checkbox" value="masking">
+    <label id="checkbox3"> Unrestricted access</label>
+        <input id="checkbox1" type="checkbox" value="access">
+    </fieldset> 
+    
+    <p id=textareap>Additional comments:</p>   
+    <textarea></textarea>
 
-    <label id="checkbox1"> Checkbox1</label>
-        <input id="checkbox1" type="checkbox" value="checkbox1selected">
-    <label id="checkbox2"> Checkbox2</label>
-        <input id="checkbox1" type="checkbox" value="checkbox2selected">
-    <label id="checkbox3"> Checkbox3</label>
-        <input id="checkbox1" type="checkbox" value="checkbox3selected">
-        
-    <textarea>
-
-    </textarea>
-
-    <input id="submit"  type="submit">
-
+    <input id="submit" type="submit" value="Send answers">
 </form>
         </main>
     </body>
