@@ -24,6 +24,22 @@ My Survey Page
     <label id="number-label"> Number</label>
         <input id="number" type="number" min="0" max="9" placeholder="Choose a number from 0 to 9" required>
     
+    <label id="dropdown"> dropdown</label>
+        <select id="dropdown">
+            <option value="Option-1">Option 1</option>
+            <option value="Option-2">Option 2</option>
+            <option value="Option-3">Option 3</option>
+        </select>
+    <fieldset>
+        <legend>Select only one:</legend>
+        <!--Radio buttons must have the same "name" attribute to work(deselect automatically)-->
+            <label id="radio-label1"> Radio1</label>
+                <input class="radio" name="radionamegroup" type="radio" value="yeah">
+            <label id="radio-label2"> Radio2</label>
+                <input class="radio" name="radionamegroup" type="radio" value="no">
+            <label id="radio-label3"> Radio3</label>
+                <input class="radio" name="radionamegroup" type="radio" value="maybe">
+    </fieldset>
 </form>
         </main>
     </body>
